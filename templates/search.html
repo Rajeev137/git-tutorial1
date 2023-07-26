@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Playlists</title>
+</head>
+<body>
+    <h1>Select a playlist:</h1>
+    <ul>
+        {% for playlist in playlists['items'] %}
+            <li>{{ playlist['name'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
